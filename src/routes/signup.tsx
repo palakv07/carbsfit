@@ -29,6 +29,7 @@ function SignupPage() {
         data: { full_name: name },
       },
     });
+    console.log(error)
     setLoading(false);
     if (error) return toast.error(error.message);
     toast.success("Account created! Check your inbox to verify ✉️");
